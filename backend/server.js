@@ -9,10 +9,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: [
-    "http://localhost:5173",
-    "https://ml-experiment-tracker-aswath-fwhy5a6uf.vercel.app" // Your specific Vercel App
-  ],
+  origin: '*',
   credentials: true
 }));
 app.use(express.json({ limit: '10mb' }));
