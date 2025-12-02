@@ -396,8 +396,13 @@ app.get('/api/health', (req, res) => {
   });
 });
 
+// Health Check for Render
+app.get('/healthz', (req, res) => {
+  res.status(200).send("API is running");
+});
+
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Server running on port ${PORT}`);
   console.log(`🤖 AI Features: ${process.env.GEMINI_API_KEY ? 'ENABLED' : 'DISABLED'}`);
 });
