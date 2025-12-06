@@ -355,7 +355,7 @@ MIT License - see LICENSE file
 ## 👨‍💻 Author
 Mohammed Aswath M
 
-Created as an internship project demonstrating:
+Project demonstrating:
 - Full-stack development skills
 - AI/ML domain knowledge
 - Production-ready code practices
